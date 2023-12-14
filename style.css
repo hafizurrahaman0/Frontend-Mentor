@@ -20,7 +20,9 @@ a {
 }
 
 body {
-    background-color: var(--primary-background-color);
+    height: 100vh;
+    background-image: linear-gradient(180deg, 
+    #111111be, #111111be), url('./assets/images/BackgroundImage.jpg');
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
     overflow-x: hidden;
@@ -37,6 +39,7 @@ header {
 
 main {
     width: 100vw;
+    padding: 1rem 0;
 }
 
 .flex-box {
@@ -52,12 +55,9 @@ main {
     display: none;
 }
 
-.unhide {
-    display: block;
-}
-
 .btn {
-    margin: 5rem 10rem;
+    width: 300px;
+    margin: 50px auto;
     background-color: #444;
     padding: 1.5rem;
     transition: all 0.3s ease;

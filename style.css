@@ -23,6 +23,7 @@ body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
+    overflow-x: hidden;
 }
 
 header {
@@ -31,17 +32,40 @@ header {
     width: 100vw;
     height: 10vh;
     font-family: var(--secondary-font-family);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 main {
     width: 100vw;
-    height: 80vh;
+}
+
+.flex-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.unhide {
+    display: block;
+}
+
+.btn {
+    margin: 5rem 10rem;
+    background-color: #444;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #111;
 }
 
 main img {

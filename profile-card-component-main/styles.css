@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(299, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --font-family: 'Kumbh Sans';
+    --font-size: 18px;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.top-pattern img{
+    width: 500px;
+    position: absolute;
+    top: -200px;
+    left: -250px;
+}
+
+.bottom-pattern img{
+    width: 500px;
+    position: absolute;
+    bottom: -200px;
+    right: -250px;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-container {
+    width: 350px;
+    height: 390px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 50px #0000006e;
+}
+
+.card-container .image-pattern img{
+    border-radius: 20px 20px 0 0;
+}
+
+.card-container .profile-image img {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border-radius: 100px;
+    border: 3px solid white;
+}
+
+.card-container .profile-detail {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    background-color: transparent;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.card-container .profile-detail h1 {
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+}
+
+.card-container .profile-detail .age {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-weight-regular);
+}
+
+.card-container .reach {
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 5rem;
+}
+
+/* Utility Class */
+
+.n-text {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-weight-regular);
+}
+
+.flex {
+    display: flex;
+}
+
+/* Media Quries */
+
+@media screen and (min-width:480px) {
+    /* style changes when the screen gets larger */
+    .top-pattern img{
+        width: 800px;
+        position: absolute;
+        top: -300px;
+        left: -250px;
+    }
+    
+    .bottom-pattern img{
+        width: 800px;
+        position: absolute;
+        bottom: -300px;
+        right: -250px;
+    }
+}

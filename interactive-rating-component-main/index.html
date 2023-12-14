@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <main class="main-container flex">
+
+    <div id="card" class="card">
+
+      <div class="rating-state flex">
+
+        <div class="star-icon">
+          <img src="./images/icon-star.svg" alt="" class="icon">
+        </div>
+
+        <h1 class="heading">How did we do?</h1>
+
+        <p class="description">Please let us know how we did with your support
+          request. All feedback is appreciated to help us
+          improve our offering!
+        </p>
+
+        <div class="rating">
+          <div id="one" class="rate">
+            <span>1</span>
+          </div>
+          <div id="two" class="rate">
+            <span>2</span>
+          </div>
+          <div id="three" class="rate">
+            <span>3</span>
+          </div>
+          <div id="four" class="rate">
+            <span>4</span>
+          </div>
+          <div id="five" class="rate">
+            <span>5</span>
+          </div>
+        </div>
+
+        <button id="button" class="btn">submit</button>
+
+      </div>
+
+    </div>
+
+    <!-- Thank You State Starts Here -->
+
+    <div id="card-2" class="card-2 hide">
+
+      <div class="thank-you-state flex">
+
+        <img src="./images/illustration-thank-you.svg" alt="" class="icon">
+
+
+        <div class="score">
+          <p>you selected
+            <span class="scoreselected"></span> out of 5
+          </p>
+        </div>
+
+        <h1 class="heading">Thank you!</h1>
+
+        <p class="description">We appreciate you taking the time to give a rating.
+          if you ever need more support, don't hesitate to get in touch!
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+
+
+  <!-- Thank you state end -->
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

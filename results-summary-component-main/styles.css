@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    /* Colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Nuetral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Font */
+    --font-family: 'Hanken Grotesk', sans-serif;
+    --font-size: 18px;
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    color: var(--white);
+    /* border: 1px solid red; */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #cfd9e69f;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.attribution {
+    color: var(--dark-gray-blue);
+    font-size: 11px;
+    text-align: center;
+  }
+
+/* Score-Container Styles */
+
+.left {
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-radius: 40px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+}
+
+.score {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    flex-direction: column;
+}
+
+.num {
+    font-size: 5rem;
+    font-weight: var(--font-weight-bolder);
+}
+
+.left h2 {
+    color: var(--white);
+}
+
+.left p {
+    color: var(--light-lavender);
+    width: 200px;
+}
+
+/* Summary-Container Styles */
+
+.right {
+    width: 350px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+h2 {
+    color: var(--dark-gray-blue);
+}
+
+.right span {
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-gray-blue);
+}
+
+.reaction {
+    width: 260px;
+    display: flex;
+    background-color: hsla(0, 100%, 67%, 0.164);
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.reaction img {
+    margin-right: 0.5rem;
+}
+
+.reaction p:nth-child(2) {
+    color: var(--light-red);
+    margin-right: 3rem;
+}
+
+.reaction p:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-lavender);
+}
+
+.s {
+    gap: 0.5rem;
+}
+
+.memory {
+    width: 260px;
+    display: flex;
+    background-color: hsl(39, 100%, 56%, 0.164);
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.memory img {
+    margin-right: 0.5rem;
+}
+
+.memory p:nth-child(2) {
+    color: var(--orangey-yellow);
+    margin-right: 3rem;
+}
+
+.memory p:nth-child(3) {
+    color: var(--light-lavender);
+}
+
+.verbal {
+    width: 260px;
+    display: flex;
+    background-color: hsl(166, 100%, 37%, 0.164);
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.verbal img {
+    margin-right: 0.5rem;
+}
+
+.verbal p:nth-child(2) {
+    color: var(--green-teal);
+    margin-right: 3rem;
+}
+
+.verbal p:nth-child(3) {
+    color: var(--light-lavender);
+}
+
+.visual {
+    width: 260px;
+    display: flex;
+    background-color: hsl(234, 85%, 45%, 0.164);
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.visual img {
+    margin-right: 0.5rem;
+}
+
+.visual p:nth-child(2) {
+    color: var(--cobalt-blue);
+    margin-right: 3rem;
+}
+
+.visual p:nth-child(3) {
+    color: var(--light-lavender);
+}
+
+/* Utility Class */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-text {
+    color: var(--light-lavender);
+}
+
+.btn {
+    width: 260px;
+    text-decoration: none;
+    background-color: var(--dark-gray-blue);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50px;
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-family: Outfit;
+  --font-weight-regula: 300;
+  --font-weight-bold: 400;
+  --font-weight-bolder: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue-main-bg);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.preview-card {
+  width: 300px;
+  height: auto;
+  padding: 1rem 0;
+  background-color: var(--very-dark-blue-card-bg);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0000004b;
+}
+
+.preview-card img {
+  width: 250px;
+  /* height: 160px; */
+  border-radius: 5px;
+}
+
+.preview-card h1 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bolder);
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+
+.preview-card h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.preview-card p {
+  font-size: 15px;
+}
+
+.nft {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.stock img,
+.time img {
+  width: 10px;
+  height: 10px;
+}
+
+.stock,
+.time {
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.stock img {
+  width: 8px;
+  height: 14px;
+}
+
+.stock p {
+  color: var(--cyan);
+}
+
+.profile {
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.profile img {
+  padding: 0.5px;
+  background-color: var(--white);
+  border-radius: 100px;
+  width: 30px;
+  height: auto;
+}
+
+.profile p:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+/* Utility Class */
+
+.flex {
+  display: flex;
+}
+
+.light-gray-text {
+  color: var(--soft-blue);
+}
+
+.line {
+  width: 85%;
+  height: 0.5px;
+  background-color: var(--soft-blue);
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --medium-grey-color: hsl(216, 12%, 54%);
+    --dark-blue-color: hsl(213, 19%, 18%);
+    --very-dark-blue-color: hsl(216, 12%, 8%);
+
+    /* Fonts */
+    --font-family: Overpass;
+    --font-size: 15px;
+    --font-weights-regular: 400;
+    --font-weights-bold: 700;
+}
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    color: var(--white-color);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--very-dark-blue-color);
+}
+
+.card, .card-2 {
+    width: 389px;
+    /* height: 400px; */
+    padding: 1.5rem;
+    background-color: var(--dark-blue-color);
+    border-radius: 30px;
+}
+
+/* Rating State Card Styles */
+
+.rating-state {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding: 0 1rem;
+}
+
+.rating-state .star-icon img {
+    width: 50px;
+}
+
+.heading {
+    margin: 2rem 0 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    color: var(--light-grey-color);
+}
+
+.rating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.rating .rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--very-dark-blue-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.rating .rate:hover {
+    background-color: var(--light-grey-color);
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 10px 5rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 50%;
+}
+
+/* Thank You State Styles */
+
+.thank-you-state {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.rating-state img {
+    background-color: var(--dark-blue-color);
+    width: 150px;
+
+}
+
+.heading {
+    margin: 2rem 0 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    color: var(--light-grey-color);
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--very-dark-blue-color);
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+
+/* Utility Class */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    padding: 10px;
+    background-color: var(--very-dark-blue-color);
+    border-radius: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}

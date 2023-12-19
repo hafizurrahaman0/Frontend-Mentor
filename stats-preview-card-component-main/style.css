@@ -153,7 +153,11 @@ body {
     .img {
         border-radius: 0 10px 10px 0;
     }
-    
+
+    .stats-body {
+        width: 10px;
+    }
+
     .stats-body .status {
         flex-direction: row;
     }

@@ -80,9 +80,17 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
+.stats-body {
+    width: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 .stats-body .heading {
     width: 290px;
-    margin: 2rem auto;
 }
 
 .stats-body .heading span {
@@ -92,13 +100,10 @@ body {
 .stats-body .paragraph {
     width: 290px;
     line-height: 20px;
-    /* margin-bottom: 30px; */
-    margin: 30px auto;
     color: var(--slightly-transparent-white-main-paragraph);
 }
 
 .stats-body .status {
-    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,11 +160,7 @@ body {
     }
 
     .stats-body {
-        width: 10px;
-    }
-
-    .stats-body .status {
-        flex-direction: row;
+        font-size: 18px;
     }
 
     .stats-body {
@@ -175,8 +176,10 @@ body {
     }
 
     .stats-body .status {
+        width: 100%;
         display: flex;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
         margin: 0;
     }
 

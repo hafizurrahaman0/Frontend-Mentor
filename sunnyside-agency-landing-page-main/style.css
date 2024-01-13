@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root {
+    --soft-red      : hsl(7, 99%, 70%);
+    --yellow        : hsl(51, 100%, 49%);
+    --dark-desaturated-cyan-graphic-design-text : hsl(167, 40%, 24%);
+    --dark-blue-photography-text : hsl(198, 62%, 26%);
+    --dark-moderate-cyan-footer  : hsl(168, 34%, 41%);
+
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-1: 'Barlow', sans-serif;
+    --font-family-2: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-1);
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Navbar */
+.nav-bar {
+    padding: 0 2rem;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--dark-blue-photography-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul {
+    list-style: none;
+}
+.nav-links ul li {
+    padding: 0 1rem;
+    display: inline-block;
+}
+/* Utility Class */
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #111;
+    background-color: #fff;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+}

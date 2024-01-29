@@ -45,6 +45,11 @@ main {
     border-radius: 100px;
     background-color: var(--grey);
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 .card .image img {
     width: 100%;
@@ -62,6 +67,7 @@ main {
     margin-bottom: 1rem;
 }
 .description .skill {
+    width: 240px;
     font-weight: 200;
 }
 .links {

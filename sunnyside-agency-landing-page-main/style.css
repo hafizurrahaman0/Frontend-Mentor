@@ -25,6 +25,7 @@
 
 body {
     font-family: var(--font-family-1);
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -47,6 +48,54 @@ a {
     padding: 0 1rem;
     display: inline-block;
 }
+
+/* Top Banner */
+
+.top-banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: var(--font-family-2);
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 2rem;
+}
+.top-banner h1 {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+.top-banner img {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* First Section */
+
+.first-layer {
+    justify-content: space-between;
+}
+.first-layer .content {
+    width: 50%;
+    padding: 7rem;
+}
+.first-layer .content h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-family-2);
+}
+.image img {
+    width: 100%;
+}
+
 /* Utility Class */
 
 .d-flex {
@@ -61,4 +110,15 @@ a {
     padding: 0.7rem 2rem;
     border-radius: 30px;
     font-weight: bold;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+/* Scrolbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #222;
 }

@@ -82,34 +82,34 @@ a {
 /* Layout */
 
 .layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .layout .content {
-    padding: 7rem;
+    margin: 0 auto;
 }
 .layout .content h2 {
     font-size: 2.5rem;
     font-family: var(--font-family-2);
 }
 .layout .content a {
+    display: inline-block;
+    margin-top: 2rem;
     color: #111;
     font-weight: 800;
     font-family: var(--font-family-2);
     text-transform: uppercase;
     border-bottom: 2px solid var(--yellow);
 }
-.image img {
-    width: 100%;
-}
-
-.detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+.layout img {
+    width: 50%;
 }
 
 .graphic-design {
+    position: relative;
+    height: 100vh;
+    width: 50%;
     background: url(./images/desktop/image-graphic-design.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -117,8 +117,16 @@ a {
     padding: 0 10rem;
     text-align: center;
 }
+.graphic-design .content, .photography .content {
+    position: absolute;
+    width: 50%;
+    bottom: 35%;
+}
 
 .photography {
+    position: relative;
+    height: 100vh;
+    width: 50%;
     background: url(./images/desktop/image-photography.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -126,6 +134,77 @@ a {
     padding: 0 10rem;
     text-align: center;
 }
+
+
+.client-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.flex-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.client {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    text-align: center;
+}
+
+.client img {
+    width: 80px;
+    border-radius: 100px;
+}
+
+.client .name p:nth-child(1) {
+    font-weight: bolder;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-gallery img {
+    width: 100%;
+}
+
+footer {
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--dark-moderate-cyan-footer);
+    flex-direction: column;
+    gap: 3rem;
+}
+
+footer .links, .social {
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Utility Class */
 

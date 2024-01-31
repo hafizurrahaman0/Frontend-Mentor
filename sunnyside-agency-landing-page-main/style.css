@@ -79,21 +79,52 @@ a {
     transform: translateX(-50%);
 }
 
-/* First Section */
+/* Layout */
 
-.first-layer {
-    justify-content: space-between;
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.first-layer .content {
-    width: 50%;
+.layout .content {
     padding: 7rem;
 }
-.first-layer .content h2 {
+.layout .content h2 {
     font-size: 2.5rem;
     font-family: var(--font-family-2);
 }
+.layout .content a {
+    color: #111;
+    font-weight: 800;
+    font-family: var(--font-family-2);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--yellow);
+}
 .image img {
     width: 100%;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.graphic-design {
+    background: url(./images/desktop/image-graphic-design.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+.photography {
+    background: url(./images/desktop/image-photography.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
 }
 
 /* Utility Class */

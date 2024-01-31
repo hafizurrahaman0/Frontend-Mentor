@@ -28,7 +28,8 @@ a {
 main {
     width: 100vw;
     height: 100vh;
-    background-color: var(--pale-blue);
+    padding: 2rem 0;
+    background-color: var(--desaturated-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +43,9 @@ main .background {
 }
 
 .card {
-    width: 400px;
+    width: 350px;
+    height: auto;
+    padding: 0 0 1rem 0;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -99,4 +102,18 @@ main .background {
 
 .btn-d {
     color: var(--desaturated-blue);
+}
+
+.bold-text {
+    font-weight: bolder;
+}
+
+@media (max-width: 425px) {
+    main {
+        height: auto;
+    }
+
+    main .background {
+        display: none;
+    }
 }

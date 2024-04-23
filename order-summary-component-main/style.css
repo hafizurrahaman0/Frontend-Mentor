@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+:root {
+    --pale-blue        : hsl(255, 100%, 94%);
+    --bright-blue      : hsl(245, 75%, 52%);
+    --very-pale-blue   : hsl(225, 100%, 98%);
+    --desaturated-blue : hsl(224, 23%, 55%);
+    --dark-blue        : hsl(223, 47%, 23%);
+
+    --font-family      : 'Red Hat Display', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 0;
+    background-color: var(--desaturated-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .background {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background-size: cover;
+}
+
+.card {
+    width: 350px;
+    height: auto;
+    padding: 0 0 1rem 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card .card-image img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.card-content {
+    margin: 1.2rem 0;
+}
+
+.description {
+    width: 300px;
+}
+
+.plan {
+    background-color: var(--very-pale-blue);
+    margin: 1.5rem 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+
+.btn {
+    background-color: var(--bright-blue);
+    color: #fff;
+    display: block;
+    margin: 1.5rem 0px;
+    border-radius: 7px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-d {
+    color: var(--desaturated-blue);
+}
+
+.bold-text {
+    font-weight: bolder;
+}
+
+@media (max-width: 425px) {
+    main {
+        height: auto;
+    }
+
+    main .background {
+        display: none;
+    }
+}

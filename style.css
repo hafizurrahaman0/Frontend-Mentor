@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+:root {
+    --primary-background-color: #222;
+    --primary-text-color: #fff;
+    --primary-font-family: 'Lexend Deca';
+    --secondary-font-family: 'Big Shoulders Display';
+}
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--primary-text-color);
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(180deg, 
+    #111111be, #111111be), url('./assets/images/BackgroundImage.jpg');
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    width: 100vw;
+    height: 10vh;
+    font-family: var(--secondary-font-family);
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100vw;
+    padding: 1rem 0;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #444;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #111;
+}
+
+main img {
+    width: 350px;
+}
+
+.project {
+    background-color: #444;
+    max-height: 350px;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #111;
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+    
+    main {
+        height: auto;
+    }
+    
+    main img {
+        width: 250px;
+    }
+
+    .project a h3 {
+        width: 250px;
+    }
+
+}

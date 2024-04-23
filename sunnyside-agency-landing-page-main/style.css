@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root {
+    --soft-red      : hsl(7, 99%, 70%);
+    --yellow        : hsl(51, 100%, 49%);
+    --dark-desaturated-cyan-graphic-design-text : hsl(167, 40%, 24%);
+    --dark-blue-photography-text : hsl(198, 62%, 26%);
+    --dark-moderate-cyan-footer  : hsl(168, 34%, 41%);
+
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-1: 'Barlow', sans-serif;
+    --font-family-2: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-1);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Navbar */
+.nav-bar {
+    padding: 0 2rem;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--dark-blue-photography-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links ul {
+    list-style: none;
+}
+.nav-links ul li {
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+/* Top Banner */
+
+.top-banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: var(--font-family-2);
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 2rem;
+}
+.top-banner h1 {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+.top-banner img {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Layout */
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.layout .content {
+    margin: 0 auto;
+}
+.layout .content h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-family-2);
+}
+.layout .content a {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #111;
+    font-weight: 800;
+    font-family: var(--font-family-2);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--yellow);
+}
+.layout img {
+    width: 50%;
+}
+
+.graphic-design {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    background: url(./images/desktop/image-graphic-design.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
+}
+.graphic-design .content, .photography .content {
+    position: absolute;
+    width: 50%;
+    bottom: 35%;
+}
+
+.photography {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    background: url(./images/desktop/image-photography.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+
+.client-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.flex-box {
+    display: flex;
+    gap: 2rem;
+}
+
+.client {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    text-align: center;
+}
+
+.client img {
+    width: 80px;
+    border-radius: 100px;
+}
+
+.client .name p:nth-child(1) {
+    font-weight: bolder;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-gallery img {
+    width: 100%;
+}
+
+footer {
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--dark-moderate-cyan-footer);
+    flex-direction: column;
+    gap: 3rem;
+}
+
+footer .links, .social {
+    display: flex;
+    gap: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility Class */
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #111;
+    background-color: #fff;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+/* Scrolbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #222;
+}

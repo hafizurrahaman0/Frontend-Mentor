@@ -123,3 +123,39 @@
     margin-top: 1rem;
     font-family: var(--font-family);
 }
+
+@media (max-width: 474px) {
+    .main-container {
+        height: 200vh;
+    }
+
+    .product-container {
+        padding: 15px;
+        width: 380px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left img {
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .product-container {
+        padding: 0;
+        width: 300px;
+    }
+
+    .left {
+        width: 300px;
+    }
+
+    .left img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .right {
+        width: 300px;
+    }
+}

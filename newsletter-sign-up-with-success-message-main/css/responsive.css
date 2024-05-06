@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .main-container {
+        width: 100vw;
+        height: auto;
+    }
+
+    .card {
+        padding: 2rem;
+        border-radius: 0;
+        flex-direction: column-reverse;
+    }
+    
+    .card .right-container img {
+        display: none;
+        width: 100%;
+    }
+
+    .card .left-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,5 @@
+@media (max-width: 425px) {
+    main {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

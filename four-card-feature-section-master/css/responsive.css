@@ -1,5 +1,28 @@
-@media (max-width: 425px) {
-    main {
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+@media (max-width: 500px) {
+  .main-container {
+    height: auto;
+  }
+
+  main {
+    grid-template-columns: auto;
+  }
+
+  header {
+    width: 400px;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+    margin-top: 100px;
+  }
+
+  header p {
+    width: 340px;
+  }
+
+  .contianer {
+    height: auto;
+  }
+
+  footer {
+    margin-bottom: 20px;
+  }
 }

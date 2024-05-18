@@ -47,6 +47,7 @@ header {
     width: 550px;
     text-align: center;
     color: var(--Very-Dark-Blue);
+    flex-direction: column;
 }
 
 header h1 {
@@ -59,6 +60,10 @@ header h2 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
+}
+
+header p {
+    color: var(--Grayish-Blue);
 }
 
 /* card-container */

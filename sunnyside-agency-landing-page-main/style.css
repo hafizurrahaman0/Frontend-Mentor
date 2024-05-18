@@ -1,114 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 :root {
-    --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
-    --dark-blue-photography-text: hsl(198, 62%, 26%);
-    --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+  --dark-blue-photography-text: hsl(198, 62%, 26%);
+  --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
 
-    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
-    --Dark-grayish-blue: hsl(232, 10%, 55%);
-    --Grayish-blue: hsl(210, 4%, 67%);
-    --White: hsl(0, 0%, 100%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
 
-    --font-family-1: 'Barlow', sans-serif;
-    --font-family-2: 'Fraunces', serif;
+  --font-family-1: "Barlow", sans-serif;
+  --font-family-2: "Fraunces", serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Nav and Header */
-
-nav {
-    width: 100vw;
-    height: 100px;
-    padding: 0 35px;
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    font-family: var(--font-family-1);
-}
-
-nav .nav-link a {
-    margin-left: 50px;
-}
-
-.hero-section {
-    width: 100vw;
-    height: 100vh;
-    background: url(./images/desktop/image-header.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-section h1 {
-    color: #fff;
-    position: relative;
-    top: 20%;
-    font-size: 4rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.hero-section img {
-    color: #fff;
-    position: relative;
-    left: 50%;
-    top: 32%;
-    transform: translateX(-50%);
-}
-
-.content-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-}
-
-.content-container .left-container,
-.right-container {
-    width: 50%;
-    height: 100%;
-}
-
-.left-container {
-    background-color: #333;
-}
-
-.right-container {
-    background-color: #222;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* utility class */
 
 .btn {
-    text-transform: uppercase;
-    background-color: #fff;
-    color: #111;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-family: var(--font-family-2);
-    font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: var(--font-family-2);
+  font-weight: bold;
 }
 
+.link {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #111;
+  border-radius: 2px;
+  border-bottom: 5px solid var(--yellow);
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nav and Header */
+
+nav {
+  width: 100vw;
+  height: 100px;
+  padding: 0 35px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: var(--font-family-1);
+}
+
+nav .nav-link a {
+  margin-left: 50px;
+}
+
+/* Hero-Section Styling */
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section h1 {
+  color: #fff;
+  position: relative;
+  top: 20%;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-section img {
+  color: #fff;
+  position: relative;
+  left: 50%;
+  top: 32%;
+  transform: translateX(-50%);
+}
+
+/* Hero-Section Styling Ends Here */
+
+.transform-container,
+.content-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.transform-container .left-container,
+.right-container,
+.content-container .left-container,
+.right-container {
+  width: 50%;
+  height: 100%;
+}
+
+/* (Transform) Container Styling */
+
+.left-container .content {
+  width: 460px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.transform-container .left-container h2,
+.content-container .stand-out-l h2 {
+  font-size: 3rem;
+  color: #111;
+}
+
+.transform-container .left-container p,
+.content-container .stand-out-l p {
+  font-size: 20px;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.right-container {
+  background-image: url(./images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* (Transform) Container Styling Ends Here */
+
+.stand-out-r {
+  background-image: url(./images/desktop/image-stand-out.jpg);
+}
+
+.stand-out-l .content {
+  width: 460px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.content-container .graphic,
+.photographic {
+  background-color: #555;
+  background-size: cover;
+  background-position: center;
+}
+
+.graphic {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.photographic {
+  background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.client-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.gallery {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+
+.pic1 {
+  background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+  width: 25vw;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.pic2 {
+  background-image: url(./images/mobile/image-gallery-orange.jpg);
+  width: 25vw;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.pic3 {
+  background-image: url(./images/mobile/image-gallery-cone.jpg);
+  width: 25vw;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.pic4 {
+  background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+  width: 25vw;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  width: 100vw;
+  height: 350px;
+  background-color: var(--dark-moderate-cyan-footer);
+  flex-direction: column;
+}
 /* Scroll Bar */
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }

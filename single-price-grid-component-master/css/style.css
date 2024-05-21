@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --font-family:  "Karla", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Light-Gray);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout */
+
+main {
+    width: 670px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.top-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top-content {
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.left-content {
+    padding: 50px;
+    background-color: var(--Cyan);
+}
+
+.right-content {
+    padding: 50px;
+    background-color: hsl(179.48deg 47.15% 51.76%);
+}
+
+/* Top Container */
+
+.heading {
+    color: var(--Cyan);
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.green-text {
+    color: hsl(71.1deg 73% 53.53%);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.grey-text {
+    color: var(--Grayish-Blue);
+}
+
+/* Left Container */
+
+.left-content > h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.left-content > .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.left-content > .price > .dollar {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.left-content > p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-content > a {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(71.1deg 73% 53.53%);
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Right Container */
+
+.right-content > h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.right-content > p {
+    font-weight: 200;
+}
+

@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .nav-link {
+        display: none;
+    }
+
+    .hero-section h1 {
+        font-size: 27px;
+    }
+
+    .content-container {
+        flex-direction: column-reverse;
+    }
+
+    .content-container .left-container, .right-container {
+        width: 100%;
+    }
+}

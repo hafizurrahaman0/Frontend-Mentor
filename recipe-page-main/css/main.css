@@ -30,7 +30,7 @@
 }
 
 body {
-  height: auto;
+  min-height: 100vh;
   padding: 50px 0;
   background-color: var(--Eggshell);
   display: flex;
@@ -40,8 +40,9 @@ body {
 }
 
 .main-container {
+  margin-top: 5rem;
   padding: 30px;
-  width: 750px;
+  width: 700px;
   height: auto;
   background-color: #fff;
   border-radius: 15px;
@@ -86,6 +87,10 @@ body {
   margin-bottom: 10px;
 }
 
+.time ul li::marker {
+  color: var(--heading-color);
+}
+
 .ingredients h2{
   font-family: var(--young-serif-font-family);
   font-weight: 300;
@@ -100,6 +105,11 @@ body {
 
 .ingredients ul li {
   margin-bottom: 10px;
+}
+
+.ingredients ul li::marker {
+  font-weight: bold;
+  color: var(--background-color);
 }
 
 .hr {
@@ -123,6 +133,11 @@ body {
 .instructions ol li {
   margin-bottom: 15px;
   color: var(--Dark-Charcoal);
+}
+
+.instructions ol li::marker {
+  font-weight: bold;
+  color: var(--background-color);
 }
 
 .nutrition h2 {
@@ -156,12 +171,12 @@ th {
   color: black;
 }
 
-.td-bold {
+.bold {
   font-weight: bold;
   color: var(--background-color);
 }
 
-.bold {
+.bold-2 {
   font-weight: bold;
   color: var(--Wenge-Brown);
 }

@@ -30,7 +30,7 @@ body {
 main {
     width: 670px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .top-grid {
@@ -46,16 +46,19 @@ main {
 .top-content {
     padding: 50px;
     background-color: aliceblue;
+    border-radius: 20px 20px 0 0;
 }
 
 .left-content {
     padding: 50px;
     background-color: var(--Cyan);
+    border-radius: 0 0 0 20px;
 }
 
 .right-content {
     padding: 50px;
     background-color: hsl(179.48deg 47.15% 51.76%);
+    border-radius: 0 0 20px 0;
 }
 
 /* Top Container */

@@ -1,6 +1,13 @@
 @media (max-width: 768px) {
     .bottom-grid {
-        display: grid;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .left-content {
+        border-radius: 0;
+    }
+
+    .right-content {
+        border-radius: 0 0 20px 20px;
     }
 }

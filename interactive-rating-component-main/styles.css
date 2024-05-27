@@ -164,6 +164,9 @@ button {
     display: none;
 }
 
-.active {
-    display: block !important;
-}
+.rate.active {
+    background-color: var(--primary-color);
+    display: flex;
+
+  }
+  

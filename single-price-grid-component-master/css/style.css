@@ -16,7 +16,8 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4rem 0;
     background-color: var(--Light-Gray);
     color: #fff;
     display: flex;

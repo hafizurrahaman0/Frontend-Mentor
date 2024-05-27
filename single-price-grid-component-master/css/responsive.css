@@ -1,3 +1,6 @@
-@media (max-width: 500px) {
-    
+@media (max-width: 768px) {
+    .bottom-grid {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
 }

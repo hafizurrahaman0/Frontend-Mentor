@@ -307,6 +307,24 @@ nav .nav-link a {
   background-color: var(--dark-moderate-cyan-footer);
   flex-direction: column;
 }
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer .links {
+  margin-bottom: 50px;
+}
+.footer .links a {
+  padding: 0 30px;
+  font-family: var(--font-family-1);
+  font-size: 14px;
+  color: var(--dark-desaturated-cyan-graphic-design-text);
+}
+.footer .social-links {
+  margin-bottom: 30px;
+}
+.footer .social-links img {
+  padding:  0 15px;
+}
 /* Scroll Bar */
 
 ::-webkit-scrollbar {

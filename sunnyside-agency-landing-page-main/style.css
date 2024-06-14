@@ -169,17 +169,99 @@ nav .nav-link a {
 
 .graphic {
   background-image: url(./images/desktop/image-graphic-design.jpg);
+  align-items: flex-end;
 }
 
 .photographic {
   background-image: url(./images/desktop/image-photography.jpg);
+  align-items: flex-end;
 }
+
+.graphic .content, .photographic .content {
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.graphic .content {
+  color: var(--dark-desaturated-cyan-graphic-design-text);
+}
+
+.photographic .content {
+  color: var(--dark-blue-photography-text);;
+}
+
+.graphic .content h3, .photographic .content h3 {
+  font-size: 2rem;
+}
+
+/* Client Testimonials */
 
 .client-section {
   width: 100vw;
   height: 100vh;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: var(--font-family-1);
 }
+
+.client-testimonials {
+  color: var(--Grayish-blue);
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-family: var(--font-family-2);
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.profile {
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.profile-pic {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.profile-description {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.profile-footer {
+  margin-top: 10px;
+}
+
+.profile-footer strong {
+  display: block;
+  font-family: var(--font-family-2);
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-size: 12px;
+  color: #666;
+}
+
+
+/* Gallery Section */
 
 .gallery {
   width: 100vw;
@@ -224,6 +306,24 @@ nav .nav-link a {
   height: 350px;
   background-color: var(--dark-moderate-cyan-footer);
   flex-direction: column;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer .links {
+  margin-bottom: 50px;
+}
+.footer .links a {
+  padding: 0 30px;
+  font-family: var(--font-family-1);
+  font-size: 14px;
+  color: var(--dark-desaturated-cyan-graphic-design-text);
+}
+.footer .social-links {
+  margin-bottom: 30px;
+}
+.footer .social-links img {
+  padding:  0 15px;
 }
 /* Scroll Bar */
 

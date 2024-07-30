@@ -1,0 +1,32 @@
+@media screen and (max-width: 555px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .contact-form {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .name {
+        flex-direction: column;
+    }
+
+    .name > div {
+        width: 100%;
+    }
+
+    .qery-type {
+        flex-direction: column;
+    }
+
+    .qery-type > div {
+        width: 100%;
+    }
+
+    .alert-message {
+        width: 100%;
+        top: -20%;
+        border-radius: 0;
+    }
+}

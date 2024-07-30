@@ -3,6 +3,7 @@
 :root {
 --Green-200-lighter: hsl(148, 38%, 91%);
 --Green-600-medium: hsl(169, 82%, 27%);
+--Green-darker: hsl(169, 86%, 16%);
 --Red: hsl(0, 66%, 54%);
 --White: hsl(0, 0%, 100%);
 --Grey-500-medium: hsl(186, 15%, 59%);
@@ -24,41 +25,117 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: var(--Green-200-lighter);
+    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .contact-form {
     width: 500px;
     min-height: 500px;
     background-color: var(--White);
-    padding: 50px;
+    padding: 40px 50px;
     border-radius: 10px;
 }
 
-form {
-    margin: 20px 0;
+.contact-form > h1 {
+    margin-bottom: 20px;
 }
 
-input, textarea {
-    width: 100%;
+.error-message {
+    display: none;
+    font-size: 12px;
+    color: var(--Red);
+    margin-top: 4px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.name > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input, textarea, .qery-type div {
     padding: 10px;
-    outline: none;
     border: 1px solid black;
-    margin: 10px 0;
     border-radius: 8px;
 }
 
-form label, input, textarea {
+.qery-type div {
+    width: 50%;
+}
+
+.qery-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.message {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox :first-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button .btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    background-color: var(--Green-600-medium);
+    text-align: center;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--Green-darker);
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.alert-message {
     display: block;
+    width: 450px;
+    background-color: var(--Grey-900-darker);
+    color: white;
+    position: absolute;
+    top: -20%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-.float-left {
-    float: left;
-    margin-right: 20px;
-}
-
-.float-right {
-    float: right;
+.alert-message > :first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }

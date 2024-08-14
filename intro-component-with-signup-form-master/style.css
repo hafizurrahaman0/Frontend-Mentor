@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --font: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+.container {
+    min-height: 100vh;
+    /* background-color: var(--Red); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* background-image */
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Red);
+    background-image: url('./images/bg-intro-desktop.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+/* left styles */
+.left {
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left h1 {
+    font-size: 36px;
+}
+
+.left p {
+    font-size: 12px;
+}
+
+/* right styles */
+.right {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right>.message {
+    background-color: var(--Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 7px;
+}
+
+.form {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.form :nth-child(odd):not(.btn):not(:last-child) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form>div img {
+    display: none;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.form>div .userInput {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+}
+
+.form>div .userInput:focus {
+    outline: none;
+    border: 1px solid var(--Blue);
+}
+
+.form>.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Green);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.smallText {
+    color: var(--Grayish-Blue);
+    font-size: 10px;
+}
+
+.link {
+    color: var(--Red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error-message {
+    width: 100%;
+    display: none;
+    font-size: 10px;
+    text-align: right;
+    color: var(--Red);
+    position: relative;
+    top: -10px;
+    right: 20px;
+    margin-bottom: -10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .background {
+        width: 100%;
+        height: 100%;
+        background-color: var(--Red);
+        background-image: url('./images/bg-intro-mobile.png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right>.message {
+        text-align: center;
+    }
+
+    .form {
+        padding: 25px 20px;
+    }
+
+    .form :last-child {
+        text-align: center;
+        line-height: 20px;
+    }
+}

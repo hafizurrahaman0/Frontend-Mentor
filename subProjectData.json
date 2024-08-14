@@ -1,0 +1,107 @@
+[
+    {
+        "link": "./3-column-preview-card-component/index.html",
+        "image": "./3-column-preview-card-component/design/desktop-design.jpg",
+        "title": "3-column-preview-card-component"
+    },
+    {
+        "link": "./blog-preview-card-main/index.html",
+        "image": "./blog-preview-card-main/design/desktop-design.jpg",
+        "title": "blog-preview-card-main"
+    },
+    {
+        "link": "./contact-form-main/index.html",
+        "image": "./contact-form-main/design/desktop-design.jpg",
+        "title": "contact-form-main"
+    },
+    {
+        "link": "./faq-accordion-main/index.html",
+        "image": "./faq-accordion-main/design/desktop-design.jpg",
+        "title": "faq-accordion-main"
+    },
+    {
+        "link": "./four-card-feature-section-master/index.html",
+        "image": "./four-card-feature-section-master/design/desktop-design.jpg",
+        "title": "four-card-feature-section-master"
+    },
+    {
+        "link": "./huddle-landing-page-with-single-introductory-section-master/index.html",
+        "image": "./huddle-landing-page-with-single-introductory-section-master/design/desktop-design.jpg",
+        "title": "huddle-landing-page-with-single-introductory-section-master"
+    },
+    {
+        "link": "./interactive-rating-component-main/index.html",
+        "image": "./interactive-rating-component-main/design/desktop-design.jpg",
+        "title": "interactive-rating-component-main"
+    },
+    {
+        "link": "./intro-component-with-signup-form-master/index.html",
+        "image": "./",
+        "title": "intro-component-with-signup-form-master"
+    },
+    {
+        "link": "./newsletter-sign-up-with-success-message-main/index.html",
+        "image": "./newsletter-sign-up-with-success-message-main/design/desktop-design.jpg",
+        "title": "newsletter-sign-up-with-success-message-main"
+    },
+    {
+        "link": "./nft-preview-card-component-main/index.html",
+        "image": "./nft-preview-card-component-main/design/desktop-design.jpg",
+        "title": "nft-preview-card-component-main"
+    },
+    {
+        "link": "./order-summary-component-main/index.html",
+        "image": "./order-summary-component-main/design/desktop-design.jpg",
+        "title": "order-summary-component-main"
+    },
+    {
+        "link": "./product-preview-card-component-main/index.html",
+        "image": "./product-preview-card-component-main/design/desktop-design.jpg",
+        "title": "product-preview-card-component-main"
+    },
+    {
+        "link": "./profile-card-component-main/index.html",
+        "image": "./profile-card-component-main/design/desktop-design.jpg",
+        "title": "profile-card-component-main"
+    },
+    {
+        "link": "./qr-code-component-main/index.html",
+        "image": "./qr-code-component-main/design/desktop-design.jpg",
+        "title": "qr-code-component-main"
+    },
+    {
+        "link": "./recipe-page-main/index.html",
+        "image": "./recipe-page-main/design/desktop-design.jpg",
+        "title": "recipe-page-main"
+    },
+    {
+        "link": "./results-summary-component-main/index.html",
+        "image": "./results-summary-component-main/design/desktop-design.jpg",
+        "title": "results-summary-component-main"
+    },
+    {
+        "link": "./single-price-grid-component-master/index.html",
+        "image": "./single-price-grid-component-master/design/desktop-design.jpg",
+        "title": "single-price-grid-component-master"
+    },
+    {
+        "link": "./social-links-profile-main/index.html",
+        "image": "./social-links-profile-main/design/desktop-preview.jpg",
+        "title": "social-links-profile-main"
+    },
+    {
+        "link": "./social-proof-section-master/index.html",
+        "image": "./social-proof-section-master/design/desktop-design.jpg",
+        "title": "social-proof-section-master"
+    },
+    {
+        "link": "./stats-preview-card-component-main/index.html",
+        "image": "./stats-preview-card-component-main/design/desktop-design.jpg",
+        "title": "stats-preview-card-component-main"
+    },
+    {
+        "link": "./sunnyside-agency-landing-page-main/index.html",
+        "image": "./sunnyside-agency-landing-page-main/design/desktop-design.jpg",
+        "title": "sunnyside-agency-landing-page-main"
+    }
+]

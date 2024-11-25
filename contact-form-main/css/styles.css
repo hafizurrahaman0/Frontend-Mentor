@@ -24,6 +24,7 @@
 body {
     width: 100vw;
     min-height: 100vh;
+    padding: 10px 0;
     background-color: var(--Green-200-lighter);
     background-color: #333;
     display: flex;

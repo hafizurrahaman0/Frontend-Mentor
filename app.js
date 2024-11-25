@@ -21,6 +21,7 @@ function createCard(projectLink, projectImage, projectTitle) {
     card.innerHTML = `
         <a href="${projectLink}" target="_blank">
             <h3>${projectTitle}</h3>
+            <img src="${projectImage}" alt="projectImage"></img>
         </a>
     `;
     const projectContainer = document.getElementById('project1'); // Adjust the container ID as needed

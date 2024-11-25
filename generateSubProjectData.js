@@ -17,7 +17,7 @@ function getSubProjectData(dir) {
             if (fs.existsSync(indexPath)) {
                 // Find the first image in the design directory matching the pattern desktop-*.jpg
                 if (fs.existsSync(designDir)) {
-                    const images = fs.readdirSync(designDir).filter(file => /^desktop-.*\.jpg$/i.test(file));
+                    const images = fs.readdirSync(designDir).filter(file => /^desktop-preview.*\.jpg$/i.test(file));
                     if (images.length > 0) {
                         imagePath = path.join(designDir, images[0]);
                     }

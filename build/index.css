@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-background-color: #222;
+  --primary-text-color: #fff;
+  --primary-font-family: "Lexend Deca";
+  --secondary-font-family: "Big Shoulders Display";
+  --font-stack-01: Helvetica, sans-serif;
+  --font-stack-02: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary-text-color);
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.7450980392), rgba(17, 17, 17, 0.7450980392)), url("../assets/images/BackgroundImage.jpg");
+  color: var(--primary-text-color);
+  font-family: var(font-stack);
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding-top: 2rem;
+  width: 100vw;
+  font-family: var(--secondary-font-family);
+  font-size: 1.5rem;
+}
+
+.description {
+  padding: 1rem 4rem;
+}
+.description .top {
+  display: flex;
+  gap: 10px;
+}
+.description .left,
+.description .right {
+  width: 50%;
+  display: inline-block;
+  background-color: #333;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.description .list {
+  text-align: left;
+}
+.description .list .list-heading {
+  display: block;
+  background-color: #333;
+  margin: 0px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.description .list ul {
+  list-style: none;
+  background-color: #333;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.description .bottom {
+  background-color: #333;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main {
+  width: 100vw;
+}
+main img {
+  width: 350px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #444;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #111;
+}
+
+.project {
+  background-color: #444;
+  max-height: 350px;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-family: var(--font-stack-02);
+}
+.project:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #111;
+}
+.project a h3 {
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+  .description .top {
+    flex-direction: column;
+  }
+  .description .left,
+  .description .right {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  main {
+    height: auto;
+  }
+  main img {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

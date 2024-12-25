@@ -2,106 +2,106 @@
     {
         "link": "./3-column-preview-card-component/index.html",
         "image": "./3-column-preview-card-component/design/desktop-preview.jpg",
-        "title": "3-column-preview-card-component"
+        "title": "3-card-component"
     },
     {
         "link": "./blog-preview-card-main/index.html",
         "image": "./blog-preview-card-main/design/desktop-preview.jpg",
-        "title": "blog-preview-card-main"
+        "title": "blog-preview-card"
     },
     {
         "link": "./contact-form-main/index.html",
         "image": "./contact-form-main/design/desktop-preview.jpg",
-        "title": "contact-form-main"
+        "title": "contact-form"
     },
     {
         "link": "./faq-accordion-main/index.html",
         "image": "./faq-accordion-main/design/desktop-preview.jpg",
-        "title": "faq-accordion-main"
+        "title": "faq-accordion"
     },
     {
         "link": "./four-card-feature-section-master/index.html",
         "image": "./four-card-feature-section-master/design/desktop-preview.jpg",
-        "title": "four-card-feature-section-master"
+        "title": "four-card-feature-section"
     },
     {
         "link": "./huddle-landing-page-with-single-introductory-section-master/index.html",
         "image": "./huddle-landing-page-with-single-introductory-section-master/design/desktop-preview.jpg",
-        "title": "huddle-landing-page-with-single-introductory-section-master"
+        "title": "single-introductory-section"
     },
     {
         "link": "./interactive-rating-component-main/index.html",
         "image": "./interactive-rating-component-main/design/desktop-preview.jpg",
-        "title": "interactive-rating-component-main"
+        "title": "interactive-rating-component"
     },
     {
         "link": "./intro-component-with-signup-form-master/index.html",
         "image": "./intro-component-with-signup-form-master/design/desktop-preview.jpg",
-        "title": "intro-component-with-signup-form-master"
+        "title": "intro-component-with-signup-form"
     },
     {
         "link": "./newsletter-sign-up-with-success-message-main/index.html",
         "image": "./newsletter-sign-up-with-success-message-main/design/desktop-preview.jpg",
-        "title": "newsletter-sign-up-with-success-message-main"
+        "title": "newsletter-sign-up-with-success-message"
     },
     {
         "link": "./nft-preview-card-component-main/index.html",
         "image": "./nft-preview-card-component-main/design/desktop-preview.jpg",
-        "title": "nft-preview-card-component-main"
+        "title": "nft-preview-card-component"
     },
     {
         "link": "./order-summary-component-main/index.html",
         "image": "./order-summary-component-main/design/desktop-preview.jpg",
-        "title": "order-summary-component-main"
+        "title": "order-summary-component"
     },
     {
         "link": "./product-preview-card-component-main/index.html",
         "image": "./product-preview-card-component-main/design/desktop-preview.jpg",
-        "title": "product-preview-card-component-main"
+        "title": "product-preview-card-component"
     },
     {
         "link": "./profile-card-component-main/index.html",
         "image": "./profile-card-component-main/design/desktop-preview.jpg",
-        "title": "profile-card-component-main"
+        "title": "profile-card-component"
     },
     {
         "link": "./qr-code-component-main/index.html",
         "image": "./qr-code-component-main/design/desktop-preview.jpg",
-        "title": "qr-code-component-main"
+        "title": "qr-code-component"
     },
     {
         "link": "./recipe-page-main/index.html",
         "image": "./recipe-page-main/design/desktop-preview.jpg",
-        "title": "recipe-page-main"
+        "title": "recipe-page"
     },
     {
         "link": "./results-summary-component-main/index.html",
         "image": "./results-summary-component-main/design/desktop-preview.jpg",
-        "title": "results-summary-component-main"
+        "title": "results-summary-component"
     },
     {
         "link": "./single-price-grid-component-master/index.html",
         "image": "./single-price-grid-component-master/design/desktop-preview.jpg",
-        "title": "single-price-grid-component-master"
+        "title": "single-price-grid-component"
     },
     {
         "link": "./social-links-profile-main/index.html",
         "image": "./social-links-profile-main/design/desktop-preview.jpg",
-        "title": "social-links-profile-main"
+        "title": "social-links-profile"
     },
     {
         "link": "./social-proof-section-master/index.html",
         "image": "./social-proof-section-master/design/desktop-preview.jpg",
-        "title": "social-proof-section-master"
+        "title": "social-proof-section"
     },
     {
         "link": "./stats-preview-card-component-main/index.html",
         "image": "./stats-preview-card-component-main/design/desktop-preview.jpg",
-        "title": "stats-preview-card-component-main"
+        "title": "stats-preview-card-component"
     },
     {
         "link": "./sunnyside-agency-landing-page-main/index.html",
         "image": "./sunnyside-agency-landing-page-main/design/desktop-preview.jpg",
-        "title": "sunnyside-agency-landing-page-main"
+        "title": "sunnyside-agency-landing-page"
     }
 ]

@@ -109,7 +109,7 @@ main img {
 
 .project {
   background-color: #444;
-  max-height: 350px;
+  height: 350px;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
@@ -126,7 +126,7 @@ main img {
 }
 .project a h3 {
   width: 250px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 @media screen and (max-width: 720px) {

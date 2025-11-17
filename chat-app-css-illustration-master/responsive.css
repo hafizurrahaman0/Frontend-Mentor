@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .background-element {
+        width: 550px;
+        height: 550px;
+        position: absolute;
+        top: 0;
+        left: -150px;
+        border-radius: 0 0 500px 500px;
+        background: linear-gradient(80deg, hsl(276, 55%, 52%) 0%, hsl(298, 71%, 68%) 100%);
+        z-index: -1;
+    }
+
+    main {
+        height: 100vh;
+        justify-content: center;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    article {
+        max-width: 500px;
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .attribution {
+        right: 200px;
+    }
+}

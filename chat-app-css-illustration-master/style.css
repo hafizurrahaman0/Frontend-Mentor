@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --purple-300: hsl(276, 100%, 81%);
+    --purple-600: hsl(276, 55%, 52%);
+    --gray-500: hsl(270, 7%, 64%);
+    --gray-300: hsl(206, 6%, 79%);
+    --purple-950: hsl(271, 36%, 24%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    width: 100vw;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-element {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 200px;
+    background: linear-gradient(80deg, hsl(276, 55%, 52%) 0%, hsl(298, 71%, 68%) 100%);
+    z-index: -1;
+}
+
+.mobile {
+    width: 280px;
+    border: 10px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.chat-bubble {
+    width: 120px;
+    height: 15px;
+    border-radius: 0 0 30px 30px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Chat Header */
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 0px 0px 30px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(80deg, hsl(276, 55%, 52%) 0%, hsl(298, 71%, 68%) 100%);
+    position: absolute;
+    width: 100%;
+}
+
+.back-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 48px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.back-btn::before {
+    content: '';
+    width: 2px;
+    height: 7px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 7px;
+    transform: rotate(30deg);
+}
+
+.back-btn::after {
+    content: '';
+    width: 2px;
+    height: 7px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    transform: rotate(-30deg);
+}
+
+.header-image {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image img {
+    width: 100%;
+    height: 25px;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.chat-header p:first-child {
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+}
+
+.chat-header p:last-child {
+    color: var(--gray-300);
+    font-family: 'Arial', sans-serif;
+    font-size: 8px;
+}
+
+.three-dots {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    box-shadow: 0 4px 0 hsl(0, 0%, 100%), 0 8px 0 hsl(0, 0%, 100%);
+}
+
+/* Chat-Messages */
+
+.chat-messages {
+    padding: 80px 10px 55px;
+    background-color: hsl(0, 0%, 91%);
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 55%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 6px;
+    line-height: 1.2;
+}
+
+.received {
+    background-color: hsl(276, 100%, 90%);
+    color: var(--purple-600);
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: var(--gray-300);
+    color: var(--purple-950);
+    align-self: flex-end;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.image-gallery img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.booking-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.booking-option {
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 20px 20px 20px 10px;
+    background: linear-gradient(280deg, hsl(308, 60%, 69%) 0%, hsl(276, 55%, 52%) 100%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    position: relative;
+}
+
+.booking-option p {
+    margin: 0 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 8px;
+    line-height: 1;
+}
+
+.booking-option span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.booking-option::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    border-radius: 50%;
+}
+
+.booking-option:hover {
+    background-color: hsl(228, 45%, 44%);
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+input {
+    flex: 1;
+    height: 30px;
+    border: 1px solid var(--gray-300);
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 8px;
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--gray-500);
+    font-size: 8px;
+}
+
+.input .send-btn {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 0;
+}
+
+.input .send-btn::before {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+.send-btn {
+    width: 80px;
+    height: 30px;
+    background-color: var(--purple-950);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.send-btn::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End-of-Chat-Messages */
+
+/* Articles */
+
+article {
+    margin-top: 40px;
+    padding: 0 50px;
+    font-size: 10px;
+    color: var(--gray-500);
+    text-align: center;
+}
+
+article h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--purple-950);
+}
+
+article p {
+    font-size: 0.8rem;
+    color: rgb(177, 177, 177);
+    line-height: 1.4;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

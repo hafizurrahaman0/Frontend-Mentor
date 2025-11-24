@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --primary-font-family: "Manrope", sans-serif;
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font-family);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.copy-message {
+    position: absolute;
+    /* top: 10px; */
+    top: -100px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 30%;
+    height: 10%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    z-index: 10;
+    /* opacity: 0; */
+    transition: all 0.2s ease-in-out;
+}
+
+.container {
+    width: 325px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .image {
+    width: 100%;
+    height: 180px;
+    background: url(./images/drawers.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.container .image img {
+    width: 100%;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p:first-child {
+    font-size: 14px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content p:last-child {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    height: 80px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image img {
+    width: 40px;
+    border-radius: 100px;
+}
+
+.profile-details {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.profile-details p:first-child {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.profile-details p:last-child {
+    font-size: 10px;
+}
+
+.share-icon i {
+    color: var(--Desaturated-Dark-Blue);
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 100%;
+    padding: 10px;
+    border: 0px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.share-icon i:hover {
+    color: #fff;
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+.share {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.share i,
+span {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.display-links {
+    opacity: 1;
+    z-index: 0;
+}

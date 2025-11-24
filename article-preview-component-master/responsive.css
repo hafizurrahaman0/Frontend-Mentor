@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 600px;
+        height: 300px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .left {
+        width: 1000px;
+        height: 100%;
+    }
+
+    .container .left .image {
+        height: 100%;
+        background-size: cover;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .share {
+        width: 40%;
+        left: 350px;
+        bottom: 100px;
+        border-radius: 15px;
+    }
+
+}

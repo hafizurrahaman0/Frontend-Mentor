@@ -74,7 +74,7 @@ main {
     padding: 20px;
 }
 
-.content p:first-child {
+.content h1 {
     font-size: 14px;
     color: var(--Very-Dark-Grayish-Blue);
     font-weight: 700;
